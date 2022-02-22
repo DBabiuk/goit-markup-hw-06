@@ -555,10 +555,9 @@ header {
 }
 .phone svg,
 .mail svg{
-  transition-property: fill, color;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 }
 
 .worker-icons {
@@ -570,10 +569,9 @@ header {
   fill: #afb1b8;
 }
 .worker-icons-background svg{
-  transition-property: fill, background-color;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 }
 .worker-icons-background {
   width: 44px;
@@ -584,10 +582,9 @@ header {
   justify-content: center;
   align-items: center;
 
-  transition-property: fill, background-color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 }
 .worker-icons-background:hover {
   background-color: var(--brand-color);
@@ -609,10 +606,19 @@ header {
   margin-top: 50px;
   /* justify-content: space-between; */
 }
-.clients-cards li {
+.clients-cards li{
   border: 1px solid #afb1b8;
   margin-right: 30px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.clients-cards li:hover,
+.clients-cards li:focus{
+  border: 1px solid var(--brand-color);
+}
+
 .clients-cards li:last-child {
   margin-right: 0px;
 }
@@ -645,12 +651,8 @@ fill: var(--brand-color);
   display: flex;
   justify-content: center;
   align-items: center;
-
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
 }
+
 .client-wrapper a svg {
   fill: #afb1b8;
 
@@ -751,6 +753,8 @@ margin-right: 0px;
   margin: 0;
   font-size: 18px;
   padding: 63px 24px;
+  line-height: 28px;
+  font-weight: 400;
 }
 .overlay-wrapper {
   position: relative;
