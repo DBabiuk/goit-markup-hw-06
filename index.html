@@ -400,10 +400,20 @@
           </li>
         </ul>
       </div>
-    </div>
-    </div>
+    <form class="subscribe-form" name="subscribe-form" autocomplete="off">
+      <h3 class="subscribe-header">Подпишитесь на рассылку</h3>
+      <div class="subscribe-wrapper">
+          <input class="subscribe-input" type="email" name="email" placeholder="E-mail"/>
+          <button class="subscribe-btn button"  type="submit">
+              <span>Подписаться</span>
+              <svg class="subscribe-btn-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+          </button>
+      </div>
+  </form>
+</div>
   </footer>
-  </div>
   <div class="modal is-hidden" data-modal>
     <div class="modal-body">
       <button type="button" class="modal-btn" data-modal-close>
@@ -411,6 +421,50 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
+      <form class="order-form" name="service-order" autocomplete="off">
+          <div class="order-form-item">
+              <label class="order-label" for="order-name">Имя</label>
+              <div class="order-input-wrapper">
+                  <input class="order-input" type="text" id="order-name" name="name">
+                  <svg class="order-svg" width="18" height="18">
+                      <use href="./images/icons.svg#human-icon"></use>
+                  </svg>
+              </div>
+          </div>
+          <div class="order-form-item">
+              <label class="order-label" for="order-phone">Телефон</label>
+              <div class="order-input-wrapper">
+                  <input class="order-input" type="tel" id="order-phone" name="phone">
+                  <svg class="order-svg" width="18" height="18">
+                      <use href="./images/icons.svg#phone-icon"></use>
+                  </svg>
+              </div>
+          </div>
+          <div class="order-form-item">
+              <label class="order-label" for="order-email">Почта</label>
+              <div class="order-input-wrapper">
+                  <input class="order-input" type="email" id="order-email" name="email">
+                  <svg class="order-svg" width="18" height="18">
+                      <use href="./images/icons.svg#envelop-icon"></use>
+                  </svg>
+              </div>
+          </div>
+          <div class="order-form-item">
+              <label class="order-label" for="order-textarea">Комментарий</label>
+                  <textarea class="order-message" id="order-textarea" name="textarea" rows="6" placeholder="Введите текст"></textarea>
+          </div>
+          <label class="checkbox-label">
+              <input class="order-checkbox" type="checkbox" name="checkbox">
+              <span class="checkbox-icon"></span>
+              <p class="policy-text">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link"><span>Условия договора</span></a></p>
+          </label> 
+          <div class="order-btn-wrapper">
+          <button class="order-btn button" type="submit">Отправить</button>
+          </div>
+      </form>
+  </div>
+</div>
     </div>
   </div>
   <script src="./js/modal.js"></script>
