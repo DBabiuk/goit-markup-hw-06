@@ -846,9 +846,7 @@ margin-right: 0px;
 
 
 .subscribe-form {
-  padding-top: 12px;
   margin-left: auto;
-
 }
 
 .subscribe-header {
@@ -1082,4 +1080,8 @@ color: #ffffff;
 }
 .order-btn-wrapper{
   padding-bottom: 20px;
+}
+.checkbox-label-wrapper{
+  display: flex;
+  align-items: baseline;
 }
